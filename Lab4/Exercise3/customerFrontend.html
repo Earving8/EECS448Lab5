@@ -1,0 +1,65 @@
+<html>
+<head>
+    <title>CircleDot</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,500" rel="stylesheet">
+    <script src="formChecker.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h1><span style="color: orange;">Circle</span><span style="color: green;">Dot</span></h1>
+        </div>
+        <div class="product">
+            <img src="Assets/tire.jpg">
+            <h1>Tire</h1>
+            <p>Description of Tire</p>
+            <p class="price">$129.99</p>
+        </div>
+        <div class="product">
+            <img src="Assets/frisbee.jpg">
+            <h1>Frisbee</h1>
+            <p>Description of Frisbee</p>
+            <p class="price">$12.99</p>
+        </div>
+        <div class="product">
+            <img src="Assets/donut.jpg">
+            <h1>Donut</h1>
+            <p>Description of Donut</p>
+            <p class="price">$1.29</p>
+        </div>
+    </div><!-- end Wrapper -->
+    <div class="shopForm">
+        <form action="customerBackend.php" method="post" onsubmit="return validate()">
+            <h2>User Information:</h2>
+            
+            <!-- Username -->
+            <label>Username:</label>
+            <input id="user" type="text" name="user" value="" placeholder="user@domain.com"><br>
+            
+            <!-- Password -->
+            <label>Password:</label>
+            <input id="pass" type="password" name="pass" value="" placeholder="password"><br>
+            
+            <!-- Product Options -->
+            <h2>Product Options:</h2>
+            <label>Tire Amount</label>
+            <input id="tamt" type="text" name="tireAmt" value="0"><br>
+            <label>Frisbee Amount</label>
+            <input id="famt" type="text" name="frisbeeAmt" value="0"><br>
+            <label>Donut Amount</label>
+            <input id="damt" type="text" name="donutAmt" value="0"><br>
+            
+            <!-- Shipping Options -->
+            <h2>Shipping Options:</h2>
+            <input type="radio" name="shipping" value="sevenDay" checked><label>Seven day shipping (Free)</label><br>
+            <input type="radio" name="shipping" value="threeDay">Three day shipping ($5.00)<br>
+            <input type="radio" name="shipping" value="oneDay">Over night shipping ($50.00)<br>
+            
+            <!-- buttons -->
+            <input type="submit" value="Purchase">
+            <input type="reset">
+        </form>
+    </div><!-- end shop Form -->
+</body>
+</html>

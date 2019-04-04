@@ -1,0 +1,138 @@
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+*/
+
+/* Document CSS */
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    
+}
+
+body{
+    background-color: #ffffff;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Body CSS */
+
+.header{
+    padding: 50px 10px;
+}
+
+.header *{
+    display: inline-block;
+}
+
+
+.wrapper{
+    text-align: center;
+    width: 900px;
+    margin: 0 auto;
+}
+
+.product{
+    display: inline-block;
+    width: 270px;
+    margin: 10px;
+    padding: 20px 0;
+    border-top: #bbbbbb solid 1px;
+    border-bottom: #bbbbbb solid 1px;
+}
+
+
+.product img{
+    margin: 0 auto;
+    height: 200px;
+    max-width: 270px;
+    max-width: 50%%;
+}
+
+.price{
+    font-size: 30px;
+    color: #61B329;
+    margin: 10px;
+}
+
+/* Form CSS */
+
+.shopForm{
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px 100px;
+}
+
+.shopform label{
+    font-size: 15px;
+}
+
+.shopForm input[type="text"], .shopForm input[type="password"]{
+    background-color: #f6f6f6;
+    text-align: center;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    margin: 5px 0 20px 0;
+}
+
+.shopForm{
+    color: #333333;
+    font-size:  15px;
+}
+
+.shopForm input[type="radio"]{
+    transform: scale(1.1);
+    margin: 10px 5px;
+}
+
+.shopForm input[type="submit"], .shopForm input[type="reset"]{
+    background-color: #61B329;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-size: 20px;
+    border: none;
+    padding: 20px;
+    width: 140px;
+    margin:  30px 3px 10px 3px;
+    cursor: pointer;
+}
+
+.shopForm input[type="submit"]:hover, .shopForm input[type="reset"]:hover{
+    background-color: orange;
+}
+
+.shopForm h2{
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+/* PHP page CSS */
+
+.receiptScreen{
+    width: 900px;
+    margin: 20px auto;
+    padding: 50px;
+    text-align: center;
+}
+
+.receipt{
+    margin: 20px auto;
+    text-align: left;
+}
+
+.receipt td, .receipt th{
+    padding: 5px 20px;
+    border: #dddddd 1px solid;
+}
+

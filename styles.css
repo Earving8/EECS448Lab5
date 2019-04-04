@@ -1,0 +1,244 @@
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Barlow', sans-serif;
+font-family: 'Poppins', sans-serif;
+
+colors
+dark gray: #60646D
+red: #FF6766
+white: #FFFFF7
+light blue: #83D6DE
+light green: #97CE68
+
+gareen dark: #006666
+selective memory: #008584
+
+*/
+
+
+/* Document CSS */
+
+*{
+    box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #EFEFE7;
+}
+
+a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+a:hover{
+    color: #FF6766;
+}
+
+h1,h2{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin: 10px auto;
+}
+
+h1{
+    font-size: 30px;
+}
+
+h2{
+    font-size: 20px;
+}
+
+ul{
+    margin: 10px 0;
+}
+
+
+/* Navigation CSS */
+
+nav{
+    background-color: #60646D;
+    padding: 0 20px;
+}
+
+.links{
+    width: 900px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.navlinks a:hover{
+    background-color: #CCCCCC;
+}
+
+.navlinks a{
+    color: #ffffff;
+    padding: 20px;
+    display: inline-block;
+}
+
+/* Body CSS */
+
+#wrapper{
+    width: 900px;
+    margin: 10px auto;
+    overflow: auto;
+}
+
+
+#bio{
+    width: 900px;
+    margin: 20px auto;
+    box-sizing: border-box;
+    background-color: #FFFFF7;
+    text-align: left;
+    overflow: auto;
+}
+
+#bio h1{
+    font-size: 50px;
+}
+
+#bio img{
+    margin-right: 30px;
+    position: relative;
+    float: left;
+    height: 400px;
+}
+
+
+#main{
+    position: relative;
+    float: left;
+    width: calc(100% - 350px);
+}
+
+#sidebar{
+    position: relative;
+    float: right;
+    width: 300px;
+}
+
+.section{
+    background-color: #FFFFF7;  
+    border-radius: 5px;
+    margin-bottom: 15px;
+    overflow: auto;
+}
+
+.section > h2{
+    margin-top: 0;
+    display: block;
+    background-color: #008584;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+}
+
+.shadow{
+    box-shadow: 0 0 10px #DDDDDD;
+}
+
+#projects{
+    margin-top: -10px;
+}
+
+#projects > h1{
+    display: block;
+    border-bottom: 2px #006666 solid;
+    color: #333333;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.project > div{
+    overflow: auto;
+    width: 100%;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.project > div > img{
+    height: 100px;
+    width: 200px;
+    position: relative;
+    float: left;
+    box-shadow: 1px 1px 1px #eeeeee;
+}
+
+.project > div > a{
+    font-weight: 400;
+    font-size: 17px;
+    border-bottom: #008584 solid 2px;
+    padding: 0 10px;
+    margin: 0 calc(50% - 155px);
+    position: relative;
+    float: right;
+}
+
+.project > div > p{
+    width: calc(100% - 200px);
+    font-weight: 300;
+    font-size: 12px;
+    color: #555555;
+    position: relative;
+    float: right;
+    padding-left: 10px;
+}
+
+.date{
+    font-size: 12px;
+    border-top: #dddddd 1px dotted;
+}
+
+
+/* Footer CSS */
+footer{
+    background-color: #2e2f2f;
+    color: #FFFFF7;
+    padding: 50px 0;
+}
+
+footer a{
+    color: #FFFFF7;
+}
+
+/* CSS for screens smaller than 900 px */
+
+@media only screen and (max-width: 900px) {
+    
+    #bio, #wrapper, .links{
+        width: calc(100% - 40px);
+    }
+    
+    #bio{
+        text-align: center;
+    }
+    
+    #bio img{
+        margin-top: 20px;
+        margin-right: auto;
+        float: none;
+    }
+    
+    #main{
+        width: 100%;
+        float: none;
+    }
+    
+    #sidebar{
+        width: 100%;
+        float: none;
+    }
+}
