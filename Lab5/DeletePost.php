@@ -25,4 +25,6 @@ if(!empty($delPost)){
 /* close connection */
 
 $mysqli->close();
+
+echo "<br><a href='DeletePost.html'>Return</a>";
 ?>

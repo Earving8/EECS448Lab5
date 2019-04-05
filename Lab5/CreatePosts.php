@@ -34,4 +34,6 @@ if (mysqli_num_rows($mysqli->query($existing)) === 1 ){
 /* close connection */
 
 $mysqli->close();
+
+echo "<br><a href='CreatePosts.html'>Return</a>";
 ?>

@@ -28,4 +28,6 @@ if ($result = $mysqli->query($query)){
 /* close connection */
 
 $mysqli->close();
+
+echo "<br><a href='AdminHome.html'>Return</a>";
 ?>
